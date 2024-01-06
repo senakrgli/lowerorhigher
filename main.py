@@ -4,6 +4,7 @@ bigData=data.data
 
 
 clb1=random.choice(bigData)
+bigData.remove(clb1)
 clb2=random.choice(bigData)
 score=0
 game_over = False
@@ -19,7 +20,7 @@ while not game_over:
             print("True choice.")
             clb1=clb2
             clb2 = random.choice(bigData)
-
+            bigData.remove(clb2)
         else:
             game_over=True
             print(f"Game Over. Your score {score}")
@@ -30,6 +31,7 @@ while not game_over:
             print("True choice.")
             clb1=clb2
             clb2 = random.choice(bigData)
+            bigData.remove(clb2)
         else:
             print(f"Game Over. Your score {score}")
             game_over=True
