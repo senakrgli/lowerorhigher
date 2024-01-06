@@ -17,6 +17,8 @@ while not game_over:
         if case1==True:
             score+=1
             print("True choice.")
+            clb1=clb2
+            clb2 = random.choice(bigData)
 
         else:
             game_over=True
@@ -26,6 +28,8 @@ while not game_over:
         if case2==True:
             score+=1
             print("True choice.")
+            clb1=clb2
+            clb2 = random.choice(bigData)
         else:
             print(f"Game Over. Your score {score}")
             game_over=True
